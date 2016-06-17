@@ -1,0 +1,56 @@
+= Demo of issue with Docker
+
+Unable to unignore using wildcard on subdirectories.
+
+== Informations
+
+[source,shell,title=docker version]
+----
+$ docker version
+Client:
+ Version:      1.11.2
+ API version:  1.23
+ Go version:   go1.5.4
+ Git commit:   b9f10c9
+ Built:        Wed Jun  1 21:39:21 2016
+ OS/Arch:      linux/amd64
+
+Server:
+ Version:      1.11.2
+ API version:  1.23
+ Go version:   go1.5.4
+ Git commit:   b9f10c9
+ Built:        Wed Jun  1 21:39:21 2016
+ OS/Arch:      linux/amd64
+----
+
+[source,shell,title=docker version]
+----
+$ docker info
+Containers: 30
+ Running: 0
+ Paused: 0
+ Stopped: 30
+Images: 72
+Server Version: 1.11.2
+Storage Driver: overlay
+ Backing Filesystem: extfs
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: null host bridge
+Kernel Version: 4.5.6-200.fc23.x86_64
+Operating System: Fedora 23 (Twenty Three)
+OSType: linux
+Architecture: x86_64
+CPUs: 4
+Total Memory: 15.55 GiB
+Name: nhuitre.batmat
+ID: Y4LM:JCSQ:E2KZ:FWYU:OJ2R:CUGN:MRQD:FCAG:QXHL:4BPO:UC3K:OCVP
+Docker Root Dir: /var/lib/docker
+Debug mode (client): false
+Debug mode (server): false
+Username: batmat
+Registry: https://index.docker.io/v1/
+----

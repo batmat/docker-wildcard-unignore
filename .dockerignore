@@ -1,0 +1,11 @@
+*
+!README.*
+
+# no line works
+!*/target/*.ext
+#!**/*.ext
+
+
+# works
+#!bam/target/*.ext
+#!bim/target/*.ext
